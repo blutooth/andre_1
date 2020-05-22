@@ -1,0 +1,14 @@
+<html>
+    <head>
+      {% if title %}
+      <title>{{ title }} - App testing</title>
+      {% else %}
+      <title>Welcome to the App/title>
+      {% endif %}
+    </head>
+    <body>
+        <div>App: <a href="/index">Home</a></div>
+        <hr>
+        {% block content %}{% endblock %}
+    </body>
+</html>
